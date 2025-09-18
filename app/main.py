@@ -6,10 +6,10 @@ class Distance:
         self.km: float = float(km)
 
     def __str__(self) -> str:
-        return f"Distance: {self.km: g} kilometers."
+        return f"Distance: {format(self.km, "g")} kilometers."
 
     def __repr__(self) -> str:
-        return f"Distance(km={self.km: g})"
+        return f"Distance(km={format(self.km, "g")})"
 
     # ---- arithmetic ----
     def __add__(self, other: Distance | int | float) -> Distance:
